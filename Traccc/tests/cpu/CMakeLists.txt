@@ -27,11 +27,13 @@ traccc_add_test(cpu
     "test_serializer.cpp"
     "test_simulation.cpp"
     "test_spacepoint_formation.cpp"
+    "test_strip_spacepoint_inputs.cpp"
+    "test_strip_spacepoint_migration.cpp"
     "test_track_params_estimation.cpp"
     "test_sanity_ordered_on.cpp"
     "test_sanity_contiguous_on.cpp"
     LINK_LIBRARIES GTest::gtest_main vecmem::core
-    traccc_tests_common traccc::core traccc::io traccc::performance
+    traccc_tests_common traccc::core traccc::device_common traccc::io traccc::performance
     traccc::simulation detray::core detray::io detray::test_common
     detray::validation_utils covfie::core
 )
